@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Web</title>
+  </head>
+  <body>
+    <!-- heading -->
+    <h1>Hai, Saya belajar web</h1>
+    <h2>Hai, Saya belajar web</h2>
+    <h3>Hai, Saya belajar web</h3>
+    <h4>Hai, Saya belajar web</h4>
+    <h5>Hai, Saya belajar web</h5>
+    <h6>Hai, Saya belajar web</h6>
+
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+      voluptatibus nesciunt delectus illo culpa rem eum dicta voluptatem aperiam
+      consectetur vel autem, omnis enim vitae officia placeat veniam dolores
+      est?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+      voluptatibus nesciunt <br />
+      delectus illo culpa rem eum dicta voluptatem aperiam consectetur vel
+      autem, omnis enim vitae officia placeat veniam dolores est?
+    </p>
+
+    <hr />
+
+    <!-- membuat link ada 2 cara, yang dipanggil : link, path file yang akan dituju. -->
+    <p>
+      Jika ada pertanyaan,
+      <a href="https://gemini.google.com/app" target="_blank"
+        >Tanyakan disini</a
+      >
+    </p>
+    <p>FAQ, <a href="halaman_lain/faq.html" target="_blank" title="ini halaman akan menuju ke file faq">Klik disini</a></p>
+
+    <hr />
+    <!-- memasukan gambar -->
+    <img
+      src="https://www.pngall.com/wp-content/uploads/8/Sample-PNG-Image.png"
+      width="300"
+      alt="Sample Image"
+    />
+    <img src="burung.png" width="300" alt="Gambar Burung" />
+
+    <hr />
+    <p>Daftar Baris yang berurutan</p>
+    <ol type="i">
+      <li>Contoh 1</li>
+      <li>Contoh 2</li>
+      <li>Contoh 3</li>
+      <li>Contoh 4</li>
+      <li>Contoh 5</li>
+    </ol>
+
+    <p>Daftar baris yang tidak beurutan</p>
+    <ul>
+      <li>Contoh 1</li>
+      <li>Contoh 2</li>
+      <li>Contoh 3</li>
+      <li>Contoh 4</li>
+      <li>Contoh 5</li>
+    </ul>
+
+    <hr />
+    <div
+      class="parent"
+      style="width: 30dvw; padding: 10px; background: #dedede"
+    >
+      <div class="child-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nobis.
+      </div>
+      <div class="child-1">
+        Lorem ipsum dolor sit
+        <span style="font-weight: bold">
+          amet consectetur adipisicing elit.
+        </span>
+        Voluptatum, nobis.
+      </div>
+      <div class="child-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nobis.
+      </div>
+      <div class="child-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nobis.
+      </div>
+    </div>
+
+    <div
+      class="parent"
+      style="width: 30dvw; padding: 10px; background: #0088cc; margin-top: 10px"
+    >
+      <div class="child-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nobis.
+      </div>
+      <div class="child-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nobis.
+      </div>
+      <div class="child-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nobis.
+      </div>
+      <div class="child-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nobis.
+      </div>
+    </div>
+
+    <hr />
+    <form action="halaman_lain/faq.html">
+      <div class="form-group">
+        <label for="">Nama Lengkap</label>
+        <input
+          type="text"
+          name="nama_lengkap"
+          required
+          placeholder="Masukan nama anda"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Email</label>
+        <input
+          type="email"
+          name="nama_lengkap"
+          required
+          placeholder="Masukan email anda"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Password</label>
+        <input
+          type="password"
+          name="nama_lengkap"
+          required
+          placeholder="Masukan password"
+        />
+      </div>
+      <div class="form-group">
+        <label for="">Gender</label>
+        <select name="gender" required id="">
+          <option value="pria">Pria</option>
+          <option value="Wanita">Wanita</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="">Deskripsi (opsional)</label>
+        <textarea name="desc" id=""></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Kirim data</button>
+      </div>
+    </form>
+
+    <hr />
+    <table style="width: 60dvw; border-collapse: collapse" border="1">
+      <thead style="background-color: #0088cc">
+        <th style="padding: 8px">Nama</th>
+        <th style="padding: 8px">NIM</th>
+        <th style="padding: 8px">Prodi</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Asep</td>
+          <td>1123456</td>
+          <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+          <td>Jajang</td>
+          <td>1123156</td>
+          <td>Teknik Informatika</td>
+        </tr>
+        <tr>
+          <td>Toni</td>
+          <td>1193456</td>
+          <td>Sistem Informasi</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>1723156</td>
+          <td>Teknik Komputer</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>1323456</td>
+          <td>Desain Komunikasi Visual</td>
+        </tr>
+        <tr>
+          <td>Albert</td>
+          <td>1113156</td>
+          <td>Teknik Informatika</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table
+      style="width: 60dvw; margin-top: 20px; border-collapse: collapse"
+      border="1"
+    >
+      <thead style="background-color: #0088cc">
+        <th style="padding: 8px">Nama</th>
+        <th style="padding: 8px">NIM</th>
+        <th style="padding: 8px">Prodi</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Asep</td>
+          <td>1123456</td>
+          <td rowspan="2" style="background-color: #00ffff40;">Teknik Informatika</td>
+        </tr>
+        <tr>
+          <td>Jajang</td>
+          <td>1123156</td>
+        </tr>
+        <tr>
+          <td>Toni</td>
+          <td>1193456</td>
+          <td>Sistem Informasi</td>
+        </tr>
+        <tr>
+          <td>Fulan</td>
+          <td colspan="2" style="background-color: #ff000050; text-align: center;">Mahasiswa DO</td>
+        </tr>
+        <tr>
+          <td>Juan</td>
+          <td>1723156</td>
+          <td>Teknik Komputer</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>1323456</td>
+          <td>Desain Komunikasi Visual</td>
+        </tr>
+        <tr>
+          <td>Albert</td>
+          <td>1113156</td>
+          <td>Teknik Informatika</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+    <p>paragrap <b>tebal dengan bold</b></p>
+    <p>paragrap <strong>tebal dengan strong</strong></p>
+
+    <p>paragrap <i>miring dengan italic</i></p>
+    <p>paragrap <em>miring dengan em</em></p>
+
+    <p>H<sub>2</sub>O</p>
+    <p>Luas Rumah : 300 M <sup>2</sup></p>
+
+    <hr>
+    <audio controls src="https://www.sousound.com/music/healing/healing_01.mp3"></audio>
+
+    <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" width="300" autoplay loop muted></video>
+
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/BfIrYWbM9D0?autoplay=1si=beVnOit4Jw1ltW9j&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe src="http://www.youtube.com/embed/JW5meKfy3fY?autoplay=1" allow="autoplay"></iframe>
+
+    <div class="" style="margin-bottom: 100px"></div>
+  </body>
+</html>

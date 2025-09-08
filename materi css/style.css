@@ -1,0 +1,97 @@
+/* font poppin */
+@import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.text-tebal {
+  font-weight: bold;
+}
+.container {
+  width: 50dvw;
+  /* height: 10dvh; */
+  background: #ff000030;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.text-blue {
+  color: #0088cc;
+}
+
+.text-judul {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.deskripsi {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+}
+
+.box-model{
+    width: 80dvw;
+    min-height: 10dvh;
+    border: 0.5px solid #8888;
+    padding: 30px;
+    margin: 40px 0;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    background-color: #0088cc;
+}
+
+.margin-bottom{
+    margin-bottom: 10dvh;
+}
+
+/* 
+karakter display block : 
+- menguasai 1 baris parent
+- ada elemen baru, akan membuatnya di bawah elemen sebelumnya
+*/
+.d-block{
+    width: 10%;
+    padding: 30px;
+    background: #0088cc;
+    margin: 10px;
+    display: block;
+}
+
+/* 
+karakter display inline.
+- membuat elemen di baris yang sama.
+- margin yang berlaku hanya margin Y.
+- padding semua sumbu berlaku.
+- Ukuran hanya mengikuti konten yang ada didalamnya.
+ */
+
+.d-inline{
+    padding: 20px;
+    background: #00cc1b;
+    margin: 0 30px;
+    display: inline;
+}
+
+/* 
+Karakter display inline block
+- membuat elemen menjadi 1 baris,
+- bisa mengatur ukuran dari elemen
+- padding dan margin berlaku.
+*/
+
+.d-inline-block{
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background: #00cc1b;
+    display: inline-block;
+}
+
+.none{
+    display: none;
+}
+
+.hide{
+    visibility: hidden;
+}
+

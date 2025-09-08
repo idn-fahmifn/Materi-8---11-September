@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling HTML</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+
+    
+  </head>
+  <body>
+    <!-- DRY -->
+    <!-- inline css -->
+    <div class="text-tebal" style="background-color: #0088cc; padding: 20px">
+      Ini adalah style langsung pada tag HTML (inline css)
+    </div>
+
+    <div class="container text-tebal">
+      ini adalah container, style merah dari internal css. text tebal dari external css
+    </div>
+
+    <div class="container">
+      ini adalah container ke-2, style nya menggunakan internal css
+    </div>
+
+    <div class="container">
+        <h3 class="text-judul text-blue">Judul Content</h3>
+        <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore architecto consectetur magnam! Nostrum possimus eveniet placeat fugit pariatur minima!</p>
+    </div>
+
+    <hr>
+
+    <div class="box-model">
+        <div class="content">
+            Ini adalah content
+        </div>
+    </div>
+    <div class="box-model">
+        <div class="content">
+            Ini adalah content
+        </div>
+    </div>
+
+    <!-- display block -->
+
+    <div class="box-model">
+        <span class="d-block">
+            Ini adalah elemen display block
+        </span>
+        <span class="d-block">
+            display ini akan menguasai 1 baris
+        </span>
+        <span class="d-block">
+            display ini akan menguasai 1 baris
+        </span>
+        <span class="d-block">
+            display ini akan menguasai 1 baris
+        </span>
+    </div>
+
+    <div class="box-model">
+        <div class="d-inline">
+            Display inline, akan menambah baris baru sejajar.
+        </div>
+        <div class="d-inline">
+            inline ke-1
+        </div>
+        <div class="d-inline">
+            inline ke-2
+        </div>
+        <div class="d-inline">
+            inline ke-3
+        </div>
+    </div>
+
+     <div class="box-model">
+        <div class="d-inline-block">
+            Display inline block, akan menambah baris baru sejajar. ukuran bisa dicustom
+        </div>
+        <div class="d-inline-block hide">
+            inline ke-1
+        </div>
+        <div class="d-inline-block">
+            inline ke-2
+        </div>
+        <div class="d-inline-block none">
+            inline ke-3
+        </div>
+    </div>
+
+
+    <div class="margin-bottom"></div>
+
+
+
+  </body>
+</html>
