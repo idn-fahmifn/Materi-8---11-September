@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        width: 70dvw;
+        min-height: 20dvh;
+        padding: 30px;
+        margin: 20px 10px;
+        border: 0.5px solid #8888;
+      }
+      .card {
+        width: 300px;
+        background-color: #fff;
+        border: 0.5px solid #8888;
+        height: 200px;
+        margin: 10px;
+        padding: 20px;
+      }
+
+      .card-relative {
+        position: relative;
+        left: 30px;
+        top: 100px;
+        background-color: #f9f9f9;
+      }
+
+      .card-sticky {
+        width: 100dvw;
+        height: 5dvw;
+        background-color: #0088cc;
+        color: #ffff;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1; /*memindahakan susunan atau layer pada elemen*/
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .box-absolute {
+        width: 100px;
+        background-color: #ff0000;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+      }
+
+      .call{
+        width: 60px;
+        height: 60px;
+        background-color: #008100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1;
+        border-radius: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Position</h1>
+      <p>Static Position</p>
+      <p>Default position adalah static</p>
+    </div>
+
+    <div class="card-sticky">
+      <h3>
+        Ini adalah sticky, elemen ini akan fixed ketika berada di posisi 1px
+      </h3>
+    </div>
+
+    <div class="container">
+      <h1>Card Relative</h1>
+      <div class="card card-relative">
+        Ini adalah Card Relative, Bisa menggeser dari posisi aslinya.
+      </div>
+      <div class="card">Ini adalah Card</div>
+    </div>
+
+    <div class="container">
+      <h1>Card Absolute</h1>
+      <div class="card relative">
+        <p>Ini adalah card biasa</p>
+        <div class="box-absolute">absolute</div>
+      </div>
+       <div class="card relative">
+        <p>Ini adalah card biasa</p>
+        <div class="box-absolute">absolute</div>
+      </div>
+    </div>
+
+    <div class="call">
+        <i data-feather="phone" style="color: #fff;"></i>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
