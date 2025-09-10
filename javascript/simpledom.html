@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM</title>
+
+    <style>
+        .title{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+            border: 0.5px solid #888;
+        }
+
+        .container{
+            width: 80dvw;
+            min-height: 30dvh;
+            padding: 20px;
+            border: 0.5px solid #8888;
+        }
+        .list-buah{
+            padding: 10px;
+            border: 0.5px solid #9999;
+            border-radius: 8px;
+            transition: .8s;
+        }
+        .list-buah:hover{
+            background-color: #0088cc60;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1 id="judul""></h1>
+    <p class="deskripsi"></p>
+    <img src="" alt="Gambar Dari Dom" id="gambar">
+
+    <div class="content">
+
+    </div>
+
+    <div class="container">
+        <h1>Daftar Nama Buah Buahan</h1>
+    </div>
+
+    <script>
+        const title = document.getElementById("judul")
+        const desc = document.querySelector(".deskripsi")
+        const imageDom = document.getElementById("gambar");
+        const content =  document.querySelector(".content")
+
+        // manipulasi isi tag
+        title.textContent = "ini adalah judul yang ditulis dengan DOM"
+        desc.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo saepe assumenda impedit iusto velit, adipisci fugiat neque eveniet enim modi! Eius quisquam nihil enim reprehenderit ipsum, harum quis impedit accusantium!"
+
+        // manipulasi style
+        title.style.color = "#0088cc"
+        title.style.background = "#445566"
+        title.style.padding = "30px"
+
+        // manipulasi isi atribut pada html
+        title.setAttribute("class", "title")
+
+        imageDom.setAttribute("src", "https://www.petanikode.com/img/js/obj/js-obj.png")
+        imageDom.setAttribute("width", 200)
+
+        // menambahkan atribut pada html
+        // innerhtml
+        content.innerHTML = `<h1>Ini adalah elemen html yang dibuat dengan inner html</h1>`
+
+        const elementBaru = document.createElement("h2")
+        elementBaru.textContent = "ini adalah elemen baru"
+
+        elementBaru.style.color = "red"
+
+        content.appendChild(elementBaru) //menambahkan elemen baru ke tag content sebagai child
+
+
+
+        const container = document.querySelector('.container')
+
+        const buah = ["apel", 'jeruk', 'mangga', 'nanas', 'cherry']
+
+        buah.forEach(item => {
+            //buat terlebih dahulu elemen
+            const listBuah = document.createElement('p')
+            listBuah.textContent = item.toUpperCase()
+            listBuah.setAttribute('class', 'list-buah')
+
+            console.log(listBuah)
+
+            container.appendChild(listBuah)
+
+        })
+
+
+
+
+        
+    </script>
+</body>
+</html>

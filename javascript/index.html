@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hello{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" onclick="return alert('Ini adalah inline js')">inline Js</button>
+    <button type="button" onclick="klik()">internal</button>
+
+    <button type="button" onclick="hello()">Hai</button>
+    <button type="button" onclick="show()">Kalkulator</button>
+
+    <h1 id="hello">Hello World</h1>
+
+    <script>
+        function klik(){
+            prompt('Kamu sarapam sama siapa?');
+        }
+    </script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

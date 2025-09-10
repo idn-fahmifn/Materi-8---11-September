@@ -87,12 +87,14 @@ Karakter display inline block
 */
 
 .d-inline-block {
-  width: 400px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
   margin: 20px;
   padding: 20px;
   background: #00cc1b;
   display: inline-block;
-  animation: bounce 1s infinite alternate;
+  animation: bounce .5s infinite alternate;
 }
 
 .none {
@@ -124,6 +126,7 @@ Karakter display inline block
   height: 100px;
   border: 0.5px solid #777;
   margin: 10px;
+  animation: ubahWarna 1s infinite alternate;
 }
 
 .d-grid {
@@ -141,6 +144,8 @@ Karakter display inline block
 .card-grid:hover{
   background-color: #777770;
   transition: 1.5s;
+  cursor: pointer;
+  position: relative;
 }
 
 
@@ -150,7 +155,29 @@ Karakter display inline block
   from{
     transform: translateY(0);
   }to{
-    transform: translateY(100px);
+    transform: translateY(200px) scaleX(1.5);
+    background-color: #0088cc;
+  }
+}
+
+@keyframes ubahWarna {
+  0%{
+    background-color: #0088cc;
+  }
+  10%{
+    background-color: #00ccc5;
+  }
+  25%{
+    background-color: #00cc33;
+  }
+  50%{
+    background-color: #229901;
+  }
+   75%{
+    background-color: #8f9901;
+  }
+  100%{
+    background-color: #995201;
   }
 }
 
@@ -164,6 +191,8 @@ Karakter display inline block
     background-color: #0088cc;
   }
 }
+
+
 
 @media screen and (max-width: 425px) {
   .d-grid {
